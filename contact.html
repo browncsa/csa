@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Brown CSA | Contact Us</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/utils.css">
+  <link href="hover.css" rel="stylesheet" media="all">
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type = "text/javascript" src="navigation.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Font Awesome
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://kit.fontawesome.com/274e33ba79.js" crossorigin="anonymous"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/csaLogoBW_icon.svg">
+</head>
+
+<body style="overflow: hidden;" id="common">
+<div class="boundingcontainer">
+  <div class="header">
+    <div class="homeSection" onmouseover="hover(document.getElementById('homeIcon'));" 
+        onmouseout="unhoverNormal(document.getElementById('homeIcon'));" onclick="location.href = 'index.html';">
+        Brown CSA
+        <img id="homeIcon" src="images/csaLogo.png">
+    </div>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+      <div class="line4"></div>
+    </div>
+  </div>
+  
+  <!-- Moved dropdown outside of header and put it in dropdownContainer -->
+  <div class="dropdownContainer"> 
+    <ul class="nav-links">
+      <li>
+        <a href = "index.html" class = "hvr-fade">&#160;Home&#160;</a>
+      </li>
+      <li>
+        <a href = "about.html" class = "hvr-fade">&#160;About&#160;</a>
+      </li>
+      <li>
+        <a href = "events.html" class = "hvr-fade">&#160;Events&#160;</a>
+      </li>
+      <li>
+        <a href = "membership.html" class = "hvr-fade">&#160;Membership&#160;</a>
+      </li>
+  </ul>
+  </div>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+      <div class="row">
+        <div class="column u-text-center" style="margin-top: 4%; width: 100%;">
+            <h1> Contact Us </h1>
+        </div>
+      </div>
+
+      <br>
+
+      <!-- Form sent to google form linked below, names correspond to elements w/in form
+        will have to change to csa email (currently sent to clara_guo@brown.edu)–––––––––––––––––––––––––––––– -->
+      <script type="text/javascript">var submitted=false;</script>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='contactThankYou.html';}">
+      </iframe>
+      <form class= "form" method = "post" action = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSf9lYh4x5kPdV8JQABrn5uX3yuDJ1kRYdSTqb7vMqaAzan7MQ/formResponse" target="hidden_iframe" method = "POST" onsubmit="submitted=true;">
+        <div class="row" style="padding: 2em 0 0 0">
+          <div class="four columns">
+            <label for="name" style="font-size: 18px">Your name</label>
+            <input class="u-full-width" type="text" name="entry.702966016" placeholder="First Last" id="name" required>
+          </div>
+          <div class="eight columns">
+            <label for="reason" style="font-size: 18px">Reason for contacting</label>
+            <select name="entry.1998714954" class="u-full-width" id="reason" required>
+              <option value="Membership">Membership</option>
+              <option value="Suggestions">Suggestions</option>
+              <option value="Event Inquiries/Partnerships">Event Inquiries/Partnerships</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <dix>
+            <label for="email" style="font-size: 18px">Your email</label>
+            <input class="u-full-width" type="email" name="entry.1542808589" placeholder="exampleEmail@mailbox.com" id="email">
+          </dix>
+        </div>
+        <label for="message" style="font-size: 18px; padding: 1em 0 0 0">Message</label>
+        <textarea name="entry.1188157566" class="u-full-width" placeholder="Message body" id="message"></textarea>
+        <label class="join-listserv">
+          <input type="hidden" name="entry.152106342" value="no">
+          <input type="checkbox" name="entry.152106342" value="yes">
+          <span class="label-body">Join our Listserv</span>
+        </label>
+        <input class="button-primary" type="submit" name = "submit" value="Send">
+      </form>
+      
+      <div class = "row">
+        <div class="btn-toolbar t-button5" role="toolbar" aria-label="Toolbar with button groups">
+          <button onclick="window.location.href = 'https://www.facebook.com/BrownCSA/';" class="button3 btn-space">FACEBOOK</button>
+          <button onclick="window.location.href = 'https://www.instagram.com/browncsa/?hl=en';" class="button3 btn-space">INSTAGRAM</button>
+        </div>
+      </div>
+
+  </div>
+</div>
+</div>
+
+
+
+</body>
+</html>
